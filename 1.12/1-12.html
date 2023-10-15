@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Курс JavaScript</title>
+    <script>
+      let obj = {
+        surname: "Зубенко",
+        name: "Михаил",
+        patronymic: "Петрович",
+        ocupation: "Мафиозник",
+        degree: "среднее профессиональное",
+        category: "Дон",
+        education: "Многопрофильный колледж при МГТУ им. Г.И. Носова",
+        descip: [
+          "История",
+          "География",
+          "Технология",
+        ],
+        note: "нет",
+      };
+      let line = `
+        <h2> ${obj.surname} ${obj.name} ${obj.patronymic}  </h2>
+        <p> <i>Фамилия: </i>  ${obj.surname} </p>
+        <p> <i>Имя: </i>  ${obj.name} </p>
+        <p> <i>Отчество: </i>  ${obj.patronymic} </p>
+        <p> <i>Должность:</i> ${obj.ocupation} </p>
+        <p> <i>Образование: </i>  ${obj.degree} </p>
+        <p> <i>Категория: </i>  ${obj.category} </p>
+        <p> <i>Место работы: </i>  ${obj.education} </p>
+        <p> <i>Дисциплина: </i> <br>
+
+          <ul>
+           <li> ${obj.descip[0]}</li> <br> 
+           <li> ${obj.descip[1]}</li>   <br>
+           <li> ${obj.descip[2]} </li>  <br>
+
+          </ul>
+        <p> <i>Дополнение: </i>  ${obj.note} </p>`;
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h1 align="center">Введение в JavaScript</h1>
+    </header>
+
+    <div class="content">
+      <script> 
+       /*
+        for (let prop in obj) {
+          document.write(prop + ": " + obj[prop] + "<br>");
+        }*/
+
+        document.write(line);
+      </script>
+    </div>
+
+    <footer align="center"></footer>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Курс JavaScript</title>
+    <script>
+     
+      let obj = {
+        surname: "Зубенко",
+        name: "Михаил",
+        patronymic: "Петрович",
+        ocupation: "Мафиозник",
+        degree: "среднее профессиональное",
+        category: "Дон",
+        education: "Многопрофильный колледж при МГТУ им. Г.И. Носова",
+        descip: "История",
+        note: "нет",
+      };
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h1 align="center">Введение в JavaScript</h1>
+    </header>
+
+    <div class="content">
+      <script>
+       
+        for (let prop in obj) {
+          document.write(prop + ": " + obj[prop] + "<br>");
+        }
+      </script>
+    </div>
+
+    <footer align="center"></footer>
+  </body>
+</html>
